@@ -1,0 +1,66 @@
+---
+layout: default
+---
+
+<div class="home">
+
+<!-- icons : cv, github, email, twitter() --> 
+  <ul class="social-media-list">
+    {% if site.email %}
+    <li>
+      {% include icon-mail.html email=site.email %}
+    </li>
+    {% endif %}
+    {% if site.github_username %}
+    <li>
+      {% include icon-github.html username=site.github_username %}
+    </li>
+    {% endif %}
+    {% if site.linkedin_username %}
+    <li>
+      {% include icon-linkedin.html username=site.linkedin_username %}
+    </li>
+    {% endif %}
+  </ul>
+
+  <div class='page-content'>
+
+    <h1 class="page-heading">About</h1>
+
+      <p> I'm an incoming Computer Science Ph.D. student at Stanford University, rotating with <a href="http://arsenalfc.stanford.edu/kunle"> Kunle Olukotun</a> and <a href="https://cs.stanford.edu/people/chrismre/">Christopher Ré</a> in the autumn quarter. My research interests include computer systems, machine learning, and security. I am especially excited by work that lies at the intersection of all three. In May 2017, I graduated from Cornell University with a double major in Electrical & Computer Engineering and Computer Science. At Cornell, I had the opportunity to do research in computer architecture with <a href="http://www.csl.cornell.edu/~cbatten/">Christopher Batten</a>. </p>
+
+    <h1 class="page-heading">Publications</h1>
+      <ul>
+        <li><p>
+          H. Freeman, M. Leszczynski, and G. Ratnaparkhi. <b>iOS Controlled, Low Cost, Low Power Massage Vest Driven by PIC32</b> <em>(to appear in Circuit Cellar)</em>.</p>
+        </li> 
+        <li><p>
+          M. Leszczynski and J. Moreira.<b> <a href="http://phys.csail.mit.edu/papers/3.pdf">Machine Solver for Physics Word Problems</a></b>, <em>NIPS Intuitive Physics Workshop 2016.</em></p>
+        </li>  
+      </ul> 
+
+  <h1 class="page-heading">Projects</h1>
+    <ul> 
+      <li> <p><b>Proxy Kernel for RISC-V Processor</b>. In Christopher Batten's research group, I built a proxy kernel to extend a RISC-V pipelined processor to support system calls. The proxy kernel proxied the system calls to a manager module via control and status registers. The work was primarily done in <a href="https://github.com/cornell-brg/pymtl">PyMTL</a> (Python-based hardware modeling framework) and C.</p>
+      </li>
+      <li><p> <b> Neural Network Accelerator</b>. As a final project for ECE 5745 (Complex Digital ASIC Design), I built an accelerator to classify handwritten digits. The design was pushed through the ASIC flow using Synopsys and evaluated on power, performance, and area. </li></p>
+    </ul> 
+
+  <h1 class="page-heading">Teaching Experience</h1>
+
+    <ul> 
+      <li> Cornell University 
+        <ul> 
+          <li>ECE 4750: Computer Architecture, Undergraduate Teaching Assistant (Fall 2016)</li>
+          <li>CS 1110: Introduction to Python, Consultant (Fall 2014, Spring 2015, Fall 2015, Spring 2016)</li>
+        </ul> 
+      </li>
+    <ul>
+<!-- Computer Architecture  -->
+
+<!-- Python  -->
+
+<!-- made with github pages note at the bottom? -->
+
+  </div> 
+</div>
