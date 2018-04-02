@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Megan Leszczynski
-email: mleszczy@stanford.edu 
+email: mleszczy@stanford.edu
 description: > # this means to ignore newlines until "baseurl:"
   Incoming C.S. Ph.D. student at Stanford University
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -26,10 +26,10 @@ linkedin_username: meganleszczynski
 # Build settings
 markdown: kramdown
 theme: minima
-plugins:
+plugins_dir:
   - jekyll-feed
 
-port: 8080 
+port: 8080
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
