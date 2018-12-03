@@ -26,22 +26,28 @@ layout: default
 
     <h1 class="page-heading">About</h1>
 
-      <p> I'm a first year Computer Science Ph.D. student at Stanford University advised by <a href="https://cs.stanford.edu/people/chrismre/">Christopher Ré</a>. My research interests generally include computer systems and machine learning. In May 2017, I graduated from Cornell University with a double major in Electrical & Computer Engineering and Computer Science. At Cornell, I had the opportunity to do research in computer architecture with <a href="http://www.csl.cornell.edu/~cbatten/">Christopher Batten</a>. </p>
+      <p> Hello! I'm a second year Computer Science Ph.D. student at Stanford University advised by <a href="https://cs.stanford.edu/people/chrismre/">Christopher Ré</a> . My research focuses on systems in machine learning. I am currently working on a project to improve the <i>stability</i> of embedding algorithms, a key building block of machine learning pipelines. Previously, I also worked on a project to improve the <i>efficiency</i> of training ML algorithms through low-precision arithmetic. I graduated with a BS in Electrical & Computer Engineering and a BS in Computer Science from Cornell University. At Cornell, I had the opportunity to do research in computer architecture with <a href="http://www.csl.cornell.edu/~cbatten/">Christopher Batten</a>.
+    </p>
 
     <h1 class="page-heading">Projects</h1>
     <ul>
-      <li> <p><b>High-Accuracy Low-Precision Training (HALP)</b>. In collaboration with <a href="http://www.cs.cornell.edu/~cdesa/">Chris De Sa</a> and others, I worked on HALP, a gradient descent variant which is able to theoretically converge to highly accurate solutions while using low-precision fixed-point arithmetic. We empirically verified HALP on linear regression and logistic regression problems, as well as LSTMs and CNNs. Code coming soon. <a href="https://dawn.cs.stanford.edu/2018/03/09/low-precision/">[blog]</a> <a href="https://arxiv.org/abs/1803.03383">[pdf]</a> <a href={{ "/assets/halp_slides.pdf" | absolute_url }}>[slides]</a>
+      <li> <p><b>Embedding Stability</b>. Embeddings must be continually re-trained on constantly changing data (i.e. changing word meanings, new vocabulary for word embeddings). However, training embeddings is inherently unstable, such that little to no change in data can cause dramatically different results, making debugging, repeatability, and model dependencies increasingly challenging. We study the tradeoffs of standard ML techniques to reduce this instability without compromising quality and performance. I'm presenting preliminary results on this work at the <a href="https://wimlworkshop.org/2018/"> Women in Machine Learning Workshop</a> co-located with NeurIPS in Montreal (Dec. 2018).
       </li></p>
     </ul>
 
+
     <h1 class="page-heading">Past Projects</h1>
+    <ul>
+      <li> <p><b>High-Accuracy Low-Precision Training (HALP)</b>. In collaboration with <a href="http://www.cs.cornell.edu/~cdesa/">Chris De Sa</a> and others, I worked on HALP, a gradient descent variant which is able to theoretically converge to highly accurate solutions while using low-precision fixed-point arithmetic. We empirically verified HALP on linear regression and logistic regression problems, as well as LSTMs and CNNs.<a href="https://dawn.cs.stanford.edu/2018/03/09/low-precision/">[blog]</a> <a href="https://arxiv.org/abs/1803.03383">[pdf]</a> <a href={{ "/assets/halp_slides.pdf" | absolute_url }}>[slides]</a>
+      </li></p>
+    </ul>
     <ul>
       <li> <p><b>Proxy Kernel for RISC-V Processor</b>. In Christopher Batten's research group, I extended a RISC-V pipelined processor to support system calls via a proxy kernel. The work was done in <a href="https://github.com/cornell-brg/pymtl">PyMTL</a> (Python-based hardware modeling framework) and C.</p>
       </li>
       <li><p> <b> Neural Network Accelerator</b>. As a final project for <a href="https://web.csl.cornell.edu/courses/ece5745/">ECE 5745 Complex Digital ASIC Design</a>, I built an accelerator to classify handwritten digits. The design was pushed through the ASIC flow using Synopsys and evaluated on power, performance, and area. </li></p>
     </ul>
 
-    <h1 class="page-heading">Publications</h1>
+    <h1 class="page-heading">Publications and Pre-prints</h1>
       <ul>
         <li><p>
           C. De Sa, M. Leszczynski, J. Zhang, A. Marzoev, C. R. Aberger, K. Olukotun, and C. Ré. <a href="https://arxiv.org/abs/1803.03383"</a><b>High-Accuracy Low-Precision Training</b></a>. <em>arXiv Preprint</em>. Mar. 2018.
