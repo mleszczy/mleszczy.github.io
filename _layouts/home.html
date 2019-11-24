@@ -26,18 +26,16 @@ layout: default
 
     <h1 class="page-heading">About</h1>
 
-      <p> Hello! I'm a second year Computer Science Ph.D. student at Stanford University advised by <a href="https://cs.stanford.edu/people/chrismre/">Christopher Ré</a> . My research focuses on systems in machine learning. I am currently working on a project to improve the <i>stability</i> of embedding algorithms, a key building block of machine learning pipelines. Previously, I also worked on a project to improve the <i>efficiency</i> of training ML algorithms through low-precision arithmetic. I graduated with a BS in Electrical & Computer Engineering and a BS in Computer Science from Cornell University. At Cornell, I had the opportunity to do research in computer architecture with <a href="http://www.csl.cornell.edu/~cbatten/">Christopher Batten</a>.
+      <p> Hello! I'm a Computer Science Ph.D. student at Stanford University advised by <a href="https://cs.stanford.edu/people/chrismre/">Christopher Ré</a>. My research interests lie at the intersection of machine learning and systems. Recently, I have been excited about learning low-dimensional representations, or embeddings, of data, including words, source code, and knowledge graph entities.
+        <!-- I am currently working on a project to improve the <i>stability</i> of embedding algorithms, a key building block of machine learning pipelines. Previously, I also worked on a project to improve the <i>efficiency</i> of training ML algorithms through low-precision arithmetic.  -->
+      I graduated with a BS in Electrical & Computer Engineering and a BS in Computer Science from Cornell University. At Cornell, I had the opportunity to do research in computer architecture with <a href="http://www.csl.cornell.edu/~cbatten/">Christopher Batten</a>. I am supported by the <a href="https://www.nsfgrfp.org/">National Science Foundation Graduate Research Fellowship</a> and the <a href=https://vpge.stanford.edu/fellowships-funding/enhancing-diversity-graduate>EDGE Fellowship</a>.
     </p>
 
-    <h1 class="page-heading">Projects</h1>
+    <h1 class="page-heading">Selected Projects</h1>
     <ul>
-      <li> <p><b>Embedding Stability</b>. Embeddings must be continually re-trained on constantly changing data (i.e. changing word meanings, new vocabulary for word embeddings). However, training embeddings is inherently unstable, such that little to no change in data can cause dramatically different results, making debugging, repeatability, and model dependencies increasingly challenging. We study the tradeoffs of standard ML techniques to reduce this instability without compromising quality and performance. I'm presenting preliminary results on this work at the <a href="https://wimlworkshop.org/2018/"> Women in Machine Learning Workshop</a> co-located with NeurIPS in Montreal (Dec. 2018).
-      </li></p>
-    </ul>
+        <li> <p><b>Embedding Stability</b>. Embeddings must be continually re-trained on constantly changing data (i.e. changing word meanings, new vocabulary for word embeddings). However, training embeddings is inherently unstable, such that small changes in data can cause dramatically different results, making debugging, repeatability, and model dependencies increasingly challenging. We study the impact of the embedding memory on this instability, and evaluate inexpensive embedding measures to predict when this instability will impact downstream natural language processing tasks.
+        </li></p>
 
-
-    <h1 class="page-heading">Past Projects</h1>
-    <ul>
       <li> <p><b>High-Accuracy Low-Precision Training (HALP)</b>. In collaboration with <a href="http://www.cs.cornell.edu/~cdesa/">Chris De Sa</a> and others, I worked on HALP, a gradient descent variant which is able to theoretically converge to highly accurate solutions while using low-precision fixed-point arithmetic. We empirically verified HALP on linear regression and logistic regression problems, as well as LSTMs and CNNs.<a href="https://dawn.cs.stanford.edu/2018/03/09/low-precision/">[blog]</a> <a href="https://arxiv.org/abs/1803.03383">[pdf]</a> <a href={{ "/assets/halp_slides.pdf" | absolute_url }}>[slides]</a>
       </li></p>
     </ul>
@@ -49,13 +47,18 @@ layout: default
 
     <h1 class="page-heading">Publications and Pre-prints</h1>
       <ul>
+          <li><p>
+              Nimit Sharad Sohoni, Christopher Richard Aberger, <b>Megan Leszczynski</b>, Jian Zhang, and Christopher Ré. <b><a href=https://arxiv.org/abs/1904.10631>Low-Memory Neural Network Training: A Technical Report</a></b>. <em>arXiv Preprint</em>, Apr. 2019.
+          </p>
+          <li><p>
+              <b>Megan Leszczynski</b>, Sen Wu, Christopher Richard Aberger, and Christopher Ré. Quantifying the Stability of Word Embeddings</b></a>. <em>In WiML at NeurIPS</em>, Dec. 2018.
+          <li><p>
+          Christopher De Sa, <b>Megan Leszczynski</b>, Jian Zhang, Alana Marzoev, Christopher Richard Aberger, Kunle Olukotun, and Christopher Ré. <a href="https://arxiv.org/abs/1803.03383"</a><b>High-Accuracy Low-Precision Training</b></a>. <em>arXiv Preprint</em>, Mar. 2018.
         <li><p>
-          C. De Sa, M. Leszczynski, J. Zhang, A. Marzoev, C. R. Aberger, K. Olukotun, and C. Ré. <a href="https://arxiv.org/abs/1803.03383"</a><b>High-Accuracy Low-Precision Training</b></a>. <em>arXiv Preprint</em>. Mar. 2018.
-        <li><p>
-          H. Freeman, M. Leszczynski, and G. Ratnaparkhi. iOS Controlled, Low Cost, Low Power Massage Vest Driven by PIC32. <em>Circuit Cellar</em>. Jan. 2018.</p>
+          Harry Freeman, <b>Megan Leszczynski</b>, and Gargi Ratnaparkhi. iOS Controlled, Low Cost, Low Power Massage Vest Driven by PIC32. <em>Circuit Cellar</em>, Jan. 2018.</p>
         </li>
         <li><p>
-          M. Leszczynski and J. Moreira.<b> <a href="http://phys.csail.mit.edu/papers/3.pdf">Machine Solver for Physics Word Problems</a></b>. <em>NIPS Intuitive Physics Workshop</em>. Dec. 2016.</p>
+          <b>Megan Leszczynski</b> and José Moreira.<b> <a href="http://phys.csail.mit.edu/papers/3.pdf">Machine Solver for Physics Word Problems</a></b>. <em>In NeurIPS Intuitive Physics Workshop</em>, Dec. 2016.</p>
         </li>
       </ul>
 
