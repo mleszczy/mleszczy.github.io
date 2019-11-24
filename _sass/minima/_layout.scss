@@ -1,5 +1,5 @@
-/** 
- * Links 
+/**
+ * Links
  */
 
 a:link {
@@ -16,6 +16,10 @@ a:hover {
 
 a:hover {
     text-decoration: none
+}
+
+strong {
+  font-weight: 530;
 }
 
 /**
@@ -138,7 +142,7 @@ a:hover {
   > li {
     display: inline;
     padding-right: 1em;
-  } 
+  }
   list-style: none;
   margin-left: 0;
   margin-bottom: -1em;
@@ -199,10 +203,22 @@ a:hover {
   padding: $spacing-unit 0;
 }
 
+.publications {
+  .title {
+    @include relative-font-size(1.1);
+    color: $deep-teal-color;
+    font-weight: 450;
+  }
+  .authors {
+  }
+  .venue {
+  }
+}
+
 .page-heading {
   @include relative-font-size(1.675);
   border-bottom: 1px solid $grey-color-light;
-  color: $deep-teal-color; 
+  color: $deep-teal-color;
 }
 
 .post-list {
