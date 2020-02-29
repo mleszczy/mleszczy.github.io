@@ -2,6 +2,9 @@
 layout: default
 ---
 
+<head>  <meta name="description" content="CS PhD student at Stanford University advised by Chris Ré.">
+<title>Megan Leszczynski - Stanford University</title></head>
+
 <div class="home">
 
   <ul class="social-media-list">
@@ -26,14 +29,13 @@ layout: default
 
     <h1 class="page-heading">About</h1>
 
-      <p> Hello! I'm a Computer Science Ph.D. student at Stanford University advised by <a href="https://cs.stanford.edu/people/chrismre/">Christopher Ré</a>. My research interests lie at the intersection of machine learning and systems. Recently, I have been excited about learning low-dimensional representations, or embeddings, of data, including words, source code, and knowledge graph entities.
-        <!-- I am currently working on a project to improve the <i>stability</i> of embedding algorithms, a key building block of machine learning pipelines. Previously, I also worked on a project to improve the <i>efficiency</i> of training ML algorithms through low-precision arithmetic.  -->
-      I graduated with a BS in Electrical & Computer Engineering and a BS in Computer Science from Cornell University. At Cornell, I had the opportunity to do research in computer architecture with <a href="http://www.csl.cornell.edu/~cbatten/">Christopher Batten</a>. I am supported by the <a href="https://www.nsfgrfp.org/">National Science Foundation Graduate Research Fellowship</a> and the <a href=https://vpge.stanford.edu/fellowships-funding/enhancing-diversity-graduate>EDGE Fellowship</a>.
+      <p> Hello! I'm a third year Computer Science Ph.D. student at Stanford University advised by <a href="https://cs.stanford.edu/people/chrismre/">Christopher Ré</a>. My research interests lie at the intersection of machine learning and systems. Recently, I have been excited about learning low-dimensional representations, or embeddings, of data, including words, source code, and knowledge graph entities.
+      I graduated with a BS in Electrical & Computer Engineering and a BS in Computer Science from Cornell University. At Cornell, I had the opportunity to do research in computer architecture with <a href="http://www.csl.cornell.edu/~cbatten/">Christopher Batten</a>. I am supported by the <a href="https://www.nsfgrfp.org/">National Science Foundation Graduate Research Fellowship</a> and the <a href=https://vpge.stanford.edu/fellowships-funding/enhancing-diversity-graduate>Stanford EDGE Fellowship</a>.
     </p>
 
     <h1 class="page-heading">Selected Projects</h1>
     <ul>
-        <li> <p><b>Embedding Stability</b>. Embeddings must be continually re-trained on constantly changing data (i.e. changing word meanings, new vocabulary for word embeddings). However, training embeddings is inherently unstable, such that small changes in data can cause dramatically different results, making debugging, repeatability, and model dependencies increasingly challenging. We study the impact of the embedding memory on this instability, and evaluate inexpensive embedding measures to predict when this instability will impact downstream natural language processing tasks.
+        <li> <p><b>Embedding Stability</b>. Embeddings must be continually re-trained on constantly changing data (i.e. changing word meanings, new vocabulary for word embeddings). However, training embeddings is inherently unstable, such that small changes in data can cause dramatically different results, making debugging, consistent user-experiences, and model dependencies increasingly challenging. We study the impact of the embedding memory on downstream instability, and evaluate embedding measures to efficiently estimate when this instability will impact downstream natural language processing tasks.<a href={{ "/assets/embedding.pdf" | absolute_url }}>[pdf]</a>
         </li></p>
 
       <li> <p><b>High-Accuracy Low-Precision Training (HALP)</b>. In collaboration with <a href="http://www.cs.cornell.edu/~cdesa/">Chris De Sa</a> and others, I worked on HALP, a gradient descent variant which is able to theoretically converge to highly accurate solutions while using low-precision fixed-point arithmetic. We empirically verified HALP on linear regression and logistic regression problems, as well as LSTMs and CNNs.<a href="https://dawn.cs.stanford.edu/2018/03/09/low-precision/">[blog]</a> <a href="https://arxiv.org/abs/1803.03383">[pdf]</a> <a href={{ "/assets/halp_slides.pdf" | absolute_url }}>[slides]</a>
@@ -48,29 +50,39 @@ layout: default
     <h1 class="page-heading">Publications and Preprints</h1>
     <div class="publications">
       <p>
+        <div class="title"><a href={{ "/assets/embedding.pdf" | absolute_url }}>Understanding the Downstream Instability of Word Embeddings</a></div>
+        <div class="authors"><strong>Megan Leszczynski</strong>, Avner May, Jian Zhang, Sen Wu, Christopher Richard Aberger, Christopher Ré.</div>
+        <div class="venue">In  <em>MLSys</em>, 2020.</div>
+      </p>
+      <p>
+      <div class="title"><a href=https://openreview.net/forum?id=BkgrBgSYDS>Kaleidoscope: An Efficient, Learnable Representation For All Structured Linear Maps</a></div>
+      <div class="authors">Tri Dao, Nimit Sohoni, Albert Gu, Matthew Eichhorn, Amit Blonder, <strong>Megan Leszczynski</strong>, Atri Rudra, Christopher Ré.</div>
+      <div class="venue">In  <em>ICLR</em>, 2020. <em>Spotlight</em>.</div>
+      </p>
+      <p>
         <div class="title"><a href=https://arxiv.org/abs/1904.10631>Low-Memory Neural Network Training: A Technical Report</a></div>
         <div class="authors">Nimit Sharad Sohoni, Christopher Richard Aberger, <strong>Megan Leszczynski</strong>, Jian Zhang, and Christopher Ré.</div>
-        <div class="venue"><em>arXiv Preprint</em>, Apr. 2019.</div>
+        <div class="venue"><em>arXiv Preprint</em>, 2019.</div>
       </p>
       <p>
         <div class="title">Quantifying the Stability of Word Embeddings</div>
         <div class="authors"><strong>Megan Leszczynski</strong>, Sen Wu, Christopher Richard Aberger, and Christopher Ré.</div>
-        <div class="venue"><em>In WiML at NeurIPS</em>, Dec. 2018.</div>
+        <div class="venue">In <em>WiML at NeurIPS</em>, 2018.</div>
       </p>
       <p>
         <div class="title"><a href=https://arxiv.org/abs/1803.03383>High-Accuracy Low-Precision Training</a></div>
         <div class="authors">Christopher De Sa, <strong>Megan Leszczynski</strong>, Jian Zhang, Alana Marzoev, Christopher Richard Aberger, Kunle Olukotun, and Christopher Ré.</div>
-        <div class="venue"><em>arXiv Preprint</em>, Mar. 2018.</div>
+        <div class="venue"><em>arXiv Preprint</em>, 2018.</div>
       </p>
       <p>
           <div class="title">iOS Controlled, Low Cost, Low Power Massage Vest Driven by PIC32</div>
           <div class="authors">Harry Freeman, <strong>Megan Leszczynski</strong>, and Gargi Ratnaparkhi.</div>
-          <div class="venue"><em>Circuit Cellar</em>, Jan. 2018.</div>
+          <div class="venue"><em>Circuit Cellar</em>, 2018.</div>
       </p>
       <p>
           <div class="title"><a href="http://phys.csail.mit.edu/papers/3.pdf">Machine Solver for Physics Word Problems</a></div>
           <div class="authors"><strong>Megan Leszczynski</strong> and José Moreira.</div>
-          <div class="venue"><em>In NeurIPS Intuitive Physics Workshop</em>, Dec. 2016</div>
+          <div class="venue">In <em>NeurIPS Intuitive Physics Workshop</em>, 2016</div>
       </p>
     </div>
 
