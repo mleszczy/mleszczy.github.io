@@ -16,7 +16,7 @@
 title: Megan Leszczynski
 email: mleszczy@stanford.edu
 description: > # this means to ignore newlines until "baseurl:"
-  Incoming C.S. Ph.D. student at Stanford University
+  C.S. Ph.D. student at Stanford University
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: m_leszczy
