@@ -7,60 +7,56 @@ layout: default
 
 <div class="home">
 
-  <ul class="social-media-list">
-    {% if site.email %}
-    <li>
-      {% include icon-mail.html email=site.email %}
-    </li>
-    {% endif %}
-    {% if site.github_username %}
-    <li>
-      {% include icon-github.html username=site.github_username %}
-    </li>
-    {% endif %}
-    {% if site.linkedin_username %}
-    <li>
-      {% include icon-linkedin.html username=site.linkedin_username %}
-    </li>
-    {% endif %}
-  </ul>
+    <div id='wrap'>
+      <div id="sidebar">
+        <img src="assets/pic.jpg">
+        <ul class="social-media-list">
+          {% if site.email %}
+          <li>
+            {% include icon-mail.html email=site.email %}
+          </li>
+          {% endif %}
+          {% if site.github_username %}
+          <li>
+            {% include icon-github.html username=site.github_username %}
+          </li>
+          {% endif %}
+          {% if site.linkedin_username %}
+          <li>
+            {% include icon-linkedin.html username=site.linkedin_username %}
+          </li>
+          {% endif %}
+        </ul>
+        </div>
 
-  <div class='page-content'>
-
-    <!-- <h1 class="page-heading">About</h1> -->
-      <p> I'm a Computer Science Ph.D. student at Stanford University advised by <a href="https://cs.stanford.edu/people/chrismre/">Christopher Ré</a>. My research interests lie at the intersection of machine learning and systems. Recently, I have been focused on natural language processing, including entity linking and representation learning.
-        I graduated with a BS in Electrical & Computer Engineering and a BS in Computer Science from Cornell University. At Cornell, I had the opportunity to do research in computer architecture with <a href="http://www.csl.cornell.edu/~cbatten/">Christopher Batten</a>. I am supported by the <a href="https://www.nsfgrfp.org/">National Science Foundation Graduate Research Fellowship</a> and the <a href=https://vpge.stanford.edu/fellowships-funding/enhancing-diversity-graduate>Stanford EDGE Fellowship</a>.
+    <div id='content'>
+    <p>
+      Hello! I am a final-year Computer Science PhD student at Stanford University advised by <a href="https://cs.stanford.edu/people/chrismre/">Christopher Ré</a>.  My PhD has focused on developing methods to leverage structured data (e.g., knowledge graphs) to improve natural language representations. During my time at Stanford, I also had the opportunity to intern at Google Research (mentored by <a href=https://arun.chagantys.org/>Arun Chaganty</a>) and <a href=https://www.microsoft.com/en-us/research/group/gray-systems-lab/>Microsoft GSL</a> (mentored by <a href=https://www.linkedin.com/in/fpsallidas/>Fotis Psallidas</a>). Prior to Stanford, I graduated from Cornell with a double major in Computer Science and Electrical & Computer Engineering,  where I was advised by <a href="http://www.csl.cornell.edu/~cbatten/">Christopher Batten</a> on computer architecture research. 
+      </p>
+      <p>
+      I am interested in building machine learning systems. Recently, I have worked on improving how machines understand language, through applications in named entity disambiguation, document retrieval, and conversational recommendations. I enjoy trying to write clean, usable code and distilling topics into simple concepts for teaching. I’ve designed and given lectures to Stanford’s <a href=https://www.youtube.com/watch?v=y68RJVfGoto>CS 224N (NLP with Deep Learning)</a> and <a href="https://cs229.stanford.edu/notes2021spring/notes2021spring/cs229_lecture_selfsupervision_final.pdf">CS 229 (Machine Learning)</a> courses and was an instructor for <a href=https://hai.stanford.edu/stanford-ai4all>Stanford AI4ALL</a> for high school students.
     </p>
+    </div>
+  </div>
 
-    <h1 class="page-heading">News</h1>
-    <ul>
-    <li><p>[02/24/22] Our paper on TABi is accepted to ACL Findings 2022.</p></li>
-    <li><p>[06/28/21] Excited to be an instructor for <a href="https://ai.stanford.edu/outreach/stanford-ai4all/">AI4ALL</a> at Stanford this summer!</p></li>
-   <li><p>[05/17/21] Gave a guest lecture to <a href="http://cs229.stanford.edu/index.html">CS 229</a> on Self-Supervised Learning.</p></li>
-   <li><p>[03/02/21] Gave a new lecture to <a href="http://web.stanford.edu/class/cs224n/">CS 224N</a> on Integrating Knowledge in Language Models.</p></li>
-   <li><p>[10/20/20] Our paper on Bootleg is accepted to CIDR 2021.</p></li>
-   <li><p>[09/21/20] Excited to be interning at <a href="https://azuredata.microsoft.com/">Microsoft's applied research lab for Azure Data</a> this fall!</p></li>
-   <li><p>[03/02/20] Presented our work on Embedding Stability at MLSys in Austin.</p></li>
- </ul>
-    <h1 class="page-heading">Selected Projects</h1>
-    <ul>
-        <li> <p><p><b>TABi</b>, a new type-enforced loss function to train bi-encoders on knowledge graph types and unstructured text for open-domain entity retrieval. TABi improves retrieval of rare entities on the Ambiguous Entity Retrieval (AmbER) sets, while maintaining strong overall retrieval performance on open-domain tasks in the KILT benchmark compared to state-of-the-art retrievers. <a href=assets/tabi_camera_ready.pdf>[pdf]</a></li></p>
-        <li> <p><b>Bootleg</b>, a self-supervised named entity disambiguation (NED) system for the tail. Bootleg improves over 50 F1 points over a BERT NED baseline on disambiguating tail (i.e rarely seen) entities in Wikipedia, while achieving state-of-the-art performance on standard, sentence-level NED benchmarks. <a href=http://hazyresearch.stanford.edu/bootleg>[website]</a> <a href=https://github.com/HazyResearch/bootleg>[code]</a></li></p>
-        <li> <p><b>Embedding Stability</b>, a study of the impact of word embedding memory on the downstream instability of NLP tasks. Embeddings must be continually re-trained on constantly changing data. However, training is inherently unstable, such that small changes in data can cause dramatically different results. We explore measures to estimate when this instability will impact downstream NLP tasks. <a href=https://proceedings.mlsys.org/paper/2020/hash/c9e1074f5b3f9fc8ea15d152add07294-Abstract.html>[pdf]</a> <a href=assets/mlsys_slides.pdf>[slides]</a>
-        </li></p>
-      <!-- <li> <p><b>High-Accuracy Low-Precision Training (HALP)</b>, a gradient descent variant which is able to theoretically converge to highly accurate solutions while using low-precision. We empirically verified HALP on linear regression and logistic regression problems, as well as LSTMs and CNNs. <a href="https://dawn.cs.stanford.edu/2018/03/09/low-precision/">[blog]</a> <a href="https://arxiv.org/abs/1803.03383">[pdf]</a> <a href=assets/halp_slides.pdf>[slides]</a> -->
-      <!-- </li></p> -->
-    </ul>
-    <!-- <ul>
-      <li> <p><b>Proxy Kernel for RISC-V Processor</b>. In Christopher Batten's research group, I extended a RISC-V pipelined processor to support system calls via a proxy kernel. The work was done in <a href="https://github.com/cornell-brg/pymtl">PyMTL</a> (Python-based hardware modeling framework) and C.</p>
-      </li>
-      <li><p> <b> Neural Network Accelerator</b>. As a final project for <a href="https://web.csl.cornell.edu/courses/ece5745/">ECE 5745 Complex Digital ASIC Design</a>, I built an accelerator to classify handwritten digits. The design was pushed through the ASIC flow using Synopsys and evaluated on power, performance, and area. </li></p>
-    </ul> -->
 
     <h1 class="page-heading">Publications and Preprints</h1>
     <div class="publications">
       <p>
-        <div class="title"><a href=assets/tabi_camera_ready.pdf>TABi: Type-Aware Bi-Encoders for Open-Domain Entity Retrieval</a></div>
+        <div class="title"><a href=https://arxiv.org/pdf/2301.11489.pdf>Generating Synthetic Data for Conversational Music
+          Recommendation Using Random Walks and Language Models</a></div>
+        <div class="authors">Megan Leszczynski, Ravi Ganti, Shu Zhang, Krisztian Balog, Filip Radlinski, Fernando Pereira, and Arun Tejasvi Chaganty</div>
+        <div class="venue"><em>arXiv Preprint</em>, 2023.</div>
+      </p>
+
+      <p>
+        <div class="title"><a href=https://research.google/pubs/pub51943/>Conversational Music Retrieval with Synthetic Data</a></div>
+        <div class="authors">Megan Leszczynski, Ravi Ganti, Shu Zhang, Krisztian Balog, Filip Radlinski, Fernando Pereira, and Arun Tejasvi Chaganty</div>
+        <div class="venue">In <em>NeurIPS Interactive Learning for NLP Workshop</em>, 2022.</div>
+      </p>
+
+      <p>
+        <div class="title"><a href=https://aclanthology.org/2022.findings-acl.169.pdf>TABi: Type-Aware Bi-Encoders for Open-Domain Entity Retrieval</a></div>
         <div class="authors">Megan Leszczynski, Daniel Y. Fu, Mayee F. Chen, and Christopher Ré</div>
         <div class="venue">In <em>Findings of ACL</em>, 2022.</div>
       </p>
@@ -82,37 +78,37 @@ layout: default
       </p>
       <p>
         <div class="title"><a href=https://proceedings.mlsys.org/paper/2020/hash/c9e1074f5b3f9fc8ea15d152add07294-Abstract.html>Understanding the Downstream Instability of Word Embeddings</a></div>
-        <div class="authors"><strong>Megan Leszczynski</strong>, Avner May, Jian Zhang, Sen Wu, Christopher Richard Aberger, Christopher Ré</div>
+        <div class="authors">Megan Leszczynski, Avner May, Jian Zhang, Sen Wu, Christopher Richard Aberger, Christopher Ré</div>
         <div class="venue">In  <em>MLSys</em>, 2020.</div>
       </p>
       <p>
       <div class="title"><a href=https://openreview.net/forum?id=BkgrBgSYDS>Kaleidoscope: An Efficient, Learnable Representation For All Structured Linear Maps</a></div>
-      <div class="authors">Tri Dao, Nimit Sohoni, Albert Gu, Matthew Eichhorn, Amit Blonder, <strong>Megan Leszczynski</strong>, Atri Rudra, Christopher Ré</div>
+      <div class="authors">Tri Dao, Nimit Sohoni, Albert Gu, Matthew Eichhorn, Amit Blonder, Megan Leszczynski, Atri Rudra, Christopher Ré</div>
       <div class="venue">In  <em>ICLR</em>, 2020. <em>Spotlight</em>.</div>
       </p>
       <p>
         <div class="title"><a href=https://arxiv.org/abs/1904.10631>Low-Memory Neural Network Training: A Technical Report</a></div>
-        <div class="authors">Nimit Sharad Sohoni, Christopher Richard Aberger, <strong>Megan Leszczynski</strong>, Jian Zhang, Christopher Ré</div>
+        <div class="authors">Nimit Sharad Sohoni, Christopher Richard Aberger, Megan Leszczynski, Jian Zhang, Christopher Ré</div>
         <div class="venue"><em>arXiv Preprint</em>, 2019.</div>
       </p>
       <p>
         <div class="title">Quantifying the Stability of Word Embeddings</div>
-        <div class="authors"><strong>Megan Leszczynski</strong>, Sen Wu, Christopher Richard Aberger, Christopher Ré</div>
+        <div class="authors">Megan Leszczynski, Sen Wu, Christopher Richard Aberger, Christopher Ré</div>
         <div class="venue">In <em>WiML at NeurIPS</em>, 2018.</div>
       </p>
       <p>
         <div class="title"><a href=https://arxiv.org/abs/1803.03383>High-Accuracy Low-Precision Training</a></div>
-        <div class="authors">Christopher De Sa, <strong>Megan Leszczynski</strong>, Jian Zhang, Alana Marzoev, Christopher Richard Aberger, Kunle Olukotun, Christopher Ré</div>
+        <div class="authors">Christopher De Sa, Megan Leszczynski, Jian Zhang, Alana Marzoev, Christopher Richard Aberger, Kunle Olukotun, Christopher Ré</div>
         <div class="venue"><em>arXiv Preprint</em>, 2018.</div>
       </p>
       <p>
-          <div class="title">iOS Controlled, Low Cost, Low Power Massage Vest Driven by PIC32</div>
-          <div class="authors">Harry Freeman, <strong>Megan Leszczynski</strong>, Gargi Ratnaparkhi</div>
+          <div class="title"><a href=https://circuitcellar.com/archive-article/massage-vest-uses-pic32/>iOS Controlled, Low Cost, Low Power Massage Vest Driven by PIC32</a></div>
+          <div class="authors">Harry Freeman, Megan Leszczynski, Gargi Ratnaparkhi</div>
           <div class="venue"><em>Circuit Cellar</em>, 2018.</div>
       </p>
       <p>
           <div class="title"><a href="http://phys.csail.mit.edu/papers/3.pdf">Machine Solver for Physics Word Problems</a></div>
-          <div class="authors"><strong>Megan Leszczynski</strong> and José Moreira</div>
+          <div class="authors">Megan Leszczynski and José Moreira</div>
           <div class="venue">In <em>NeurIPS Intuitive Physics Workshop</em>, 2016</div>
       </p>
     </div>
@@ -130,5 +126,4 @@ layout: default
           <li>CS 1110: Introduction to Python, Consultant (Fall 2014, Spring 2015, Fall 2015, Spring 2016)</li>
         </ul>
 
-  </div>
 </div>

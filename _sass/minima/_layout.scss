@@ -144,7 +144,7 @@ strong {
   list-style: none;
   margin-left: 0;
   margin-bottom: -1em;
-  margin-top: -1em;
+  margin-top: 1em;
 }
 
 .footer-col-wrapper {
@@ -192,6 +192,26 @@ strong {
     width:         calc(100% - (#{$spacing-unit} / 2));
   }
 }
+
+#wrap {
+  color: #303030;
+  margin: 10px auto;
+  padding: 0;
+  width: 940px;
+}
+
+#sidebar {
+  float: right;
+  width: 240px;
+  padding-left: 40px;
+}
+
+#content {
+  text-align: left;
+  width: 615px;
+  padding-right: 40px;
+}
+
 
 
 /**
